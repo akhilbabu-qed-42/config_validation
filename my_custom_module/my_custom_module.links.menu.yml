@@ -1,0 +1,5 @@
+my_custom_module.settings:
+  title: Settings
+  parent: system.admin_config_system
+  route_name: my_custom_module.settings
+  weight: 10

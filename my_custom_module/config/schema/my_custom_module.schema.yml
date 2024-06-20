@@ -1,0 +1,25 @@
+# Schema for the configuration files of the My custom module module.
+my_custom_module.settings:
+  type: config_object
+  label: 'My custom module settings'
+  mapping:
+    username:
+      type: string
+      label: 'Username'
+      constraints:
+        NotBlank:
+          message: "This field is inevitable."
+    purpose:
+      type: string
+      label: 'Purpose'
+      constraints:
+        Choice:
+          - To wipe out half of the universe.
+    future_plan:
+      type: string
+      label: 'Future plan'
+    save_ironman:
+      type: string
+      label: 'Save Ironman'
+      constraints:
+        SaveIronman: []
